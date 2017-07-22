@@ -1,0 +1,18 @@
+/* CSS Document */
+
+/* fonts */
+@font-face {
+  font-family:'DIGINormal';
+  src:url('fonts/digital.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* header */
+body {
+  background-color: #2e3032;
+  overflow: hidden;
+  zoom: 1;
+}
+
+/* clock */
