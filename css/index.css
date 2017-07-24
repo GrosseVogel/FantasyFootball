@@ -88,6 +88,33 @@ img {
   position: absolute;
 }
 
+#watching {
+  background-color: #606060;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 200px;
+  position: absolute;
+}
+
+#recent {
+  background-color: #f9a638;
+  top: 200px;
+  left: 0px;
+  right: 0px;
+  height: 125px;
+  position: absolute;
+}
+
+#roster {
+  background-color: #9600ff;
+  top: 325px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+}
+
 /* Clock */
 #clock {
   background-color: #2d2d2d;
@@ -130,11 +157,38 @@ img {
   position: absolute;
 }
 
-#curSelection {
+#selection {
   background-color: #ff006b;
   top: 0px;
   left: 300px;
   right: 0px;
   bottom: 0px;
+  position: absolute;
+}
+
+#sel-name {
+  background-color: #004509;
+  top: 10px;
+  left: 10px;
+  height: 50px;
+  right:10px;
+  position: absolute;
+}
+
+#sel-team {
+  background-color: #ffffff;
+  top: 70px;
+  left: 10px;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+}
+
+#sel-stats {
+  background-color: #000000;
+  top: 70px;
+  left: 120px;
+  height: 100px;
+  right:10px;
   position: absolute;
 }
