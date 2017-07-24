@@ -28,6 +28,7 @@ img {
   left: 0;
   min-height: 600px;
   min-width: 980px;
+  position: absolute;
 }
 
 #header {
@@ -36,6 +37,7 @@ img {
   right: 10px;
   height: 55px;
   left: 10px;
+  position: absolute;
 }
 
 #logo-header {
@@ -49,35 +51,90 @@ img {
   background-color: #00f0f0;
   top: 55px;
   right: 243px;
-  bottom: 60px;
+  bottom: 0px;
   left: 0px;
   overflow: hidden;
+  position: absolute;
 }
 
 #top {
   background-color: #f000f0;
   top: 0;
-  right: 243px;
+  right: 0px;
   height: 184px;
   left: 0px;
+  position: absolute;
 }
 
 #bottom {
-  background-color: #ff5400;
+  background-color: #0000ff;
   top: 184px;
-  right: 243px;
-  bottom: 0px;
   left: 0px;
+  bottom: 0px;
+  right: 0px;
   overflow: hidden;
+  position: absolute;
 }
 
 #right {
   padding: 3px;
-  top: -1px;
+  top: 55px;
   right: -1px;
-  bottom: 200px;
-  width: 244px;
+  bottom: 0px;
+  width: 236px;
   background: #f0f000;
   z-index: 302;
   border: 1px solid #000000;
+  position: absolute;
+}
+
+/* Clock */
+#clock {
+  background-color: #2d2d2d;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 92px;
+  position: absolute;
+}
+
+#lcd-display .lcd-numbers {
+  font: 65px/65px 'DIGINormal';
+  position: absolute;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+#lcd-display .lcd-numbers span {
+  width: 38px;
+  display: inline-block;
+  text-align: right;
+}
+
+#lcd-display .lcd-set1 {
+  color: rgba(255, 255, 255, 0.05);
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.05);
+}
+
+#lcd-display .lcd-numbers lcd-set2 {
+  text-align: center;
+  width: 15px;
+}
+
+#ondeck {
+  background-color: #ff5400;
+  top: 92px;
+  left: 0px;
+  width: 300px;
+  bottom: 0px;
+  position: absolute;
+}
+
+#curSelection {
+  background-color: #ff006b;
+  top: 0px;
+  left: 300px;
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
 }
