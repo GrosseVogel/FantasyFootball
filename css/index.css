@@ -1,5 +1,34 @@
 /* CSS Document */
 
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
 /* fonts */
 @font-face {
   font-family:'DIGINormal';
@@ -76,52 +105,46 @@ img {
   position: absolute;
 }
 
+#players .hd {
+  background-color: #29cc00;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 40px;
+
+}
+
 #right {
   padding: 3px;
   top: 55px;
   right: -1px;
   bottom: 0px;
   width: 236px;
-  background: #f0f000;
+  background: #2b2f33;
   z-index: 302;
   border: 1px solid #000000;
   position: absolute;
 }
 
-#watching {
-  background-color: #606060;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  height: 200px;
-  position: absolute;
-}
 
-#recent {
-  background-color: #f9a638;
-  top: 200px;
-  left: 0px;
-  right: 0px;
-  height: 125px;
-  position: absolute;
-}
 
 #roster {
-  background-color: #9600ff;
   top: 325px;
   left: 0px;
   right: 0px;
   bottom: 0px;
   position: absolute;
+  background-color: #606060;
 }
 
-/* Clock */
+/* layout > top > Clock */
 #clock {
   background-color: #2d2d2d;
   top: 0px;
   left: 0px;
   width: 300px;
-  height: 92px;
+  height: 50%;
   position: absolute;
 }
 
@@ -133,9 +156,9 @@ img {
 }
 
 #lcd-display .lcd-numbers span {
-  width: 38px;
+  width: 15px;
   display: inline-block;
-  text-align: right;
+  text-align: center;
 }
 
 #lcd-display .lcd-set1 {
@@ -143,20 +166,22 @@ img {
   text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.05);
 }
 
-#lcd-display .lcd-numbers lcd-set2 {
+#lcd-display .lcd-numbers .lcd-set2 {
   text-align: center;
   width: 15px;
 }
 
 #ondeck {
   background-color: #ff5400;
-  top: 92px;
+  top: 50%;
   left: 0px;
   width: 300px;
   bottom: 0px;
   position: absolute;
 }
 
+
+/* layout > main > top > selected player */
 #selection {
   background-color: #ff006b;
   top: 0px;
@@ -176,7 +201,7 @@ img {
 }
 
 #sel-team {
-  background-color: #ffffff;
+  background-color: #2e3032;
   top: 70px;
   left: 10px;
   height: 100px;
@@ -184,6 +209,11 @@ img {
   position: absolute;
 }
 
+#sel-team img {
+  top: 50%;
+  width: 100px;
+  height: auto;
+}
 #sel-stats {
   background-color: #000000;
   top: 70px;
@@ -191,4 +221,253 @@ img {
   height: 100px;
   right:10px;
   position: absolute;
+}
+
+#right-wrapper {
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  position: absolute;
+  border: 1px solid #000000;
+}
+
+#watching {
+  background-color: #606060;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 200px;
+  position: absolute;
+}
+
+#watching .content {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+}
+
+#watching .content .hd {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 30px;
+  border-bottom: 1px solid #000000;
+  position: absolute;
+}
+
+#watching .content .hd h4 {
+  padding: 0px 6px;
+  border-top: 1px solid #4f5459;
+  border-left: 1px solid #4f5459;
+  font: 14px/29px Arial;
+  color: #c0c0c2;
+  text-transform: uppercase;
+  height: 29px;
+}
+
+#watching .content .bd {
+  top: 30px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  overflow: hidden;
+  background: #1a1d1f;
+  border-bottom: 1px solid #000000;
+}
+
+#watching .content .bd .bd-wrapper {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#watching .content .bd ul li {
+  font: 14px/14px Arial;
+  color: #b4b4b4;
+  padding: 4px;
+  border-top: 1px solid #2d3033;
+  border-bottom: 1px solid #000000;
+  background: none;
+  font-weight: normal;
+  vertical-align: top;
+  height: auto;
+  text-shadow: 0px 0px 2px #000000;
+}
+
+#recent {
+  background-color: #606060;
+  top: 200px;
+  left: 0px;
+  right: 0px;
+  height: 125px;
+  position: absolute;
+}
+
+#recent .content {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+}
+
+#recent .content .hd {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 30px;
+  position: absolute;
+  overflow: hidden;
+  border-bottom: 1px solid #000000;
+}
+
+#recent .content .hd h4 {
+  padding: 0px 6px;
+  border-top: 1px solid #4f5459;
+  border-left: 1px solid #4f5459;
+  font: 14px/29px Arial;
+  color: #c0c0c2;
+  text-transform: uppercase;
+  height: 29px;
+}
+
+#recent .content .bd {
+  top: 30px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background: #1a1d1f;
+}
+
+#recent .content .bd .bd-wrapper {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#recent .content .bd ul li {
+  font: 14px/14px;
+  color: #b4b4b4;
+  padding: 4px;
+  border-top: 1px solid #2d3033;
+  border-bottom: 1px solid #000000;
+  background: none;
+  font-weight: normal;
+  vertical-align: top;
+  height: auto;
+  text-shadow: 0px 0px 2px #000000;
+}
+
+#roster .content {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  border-bottom: 1px solid #000000;
+}
+
+#roster .roster-title {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  height: 30px;
+  border-bottom: 1px solid #000000;
+}
+
+#roster .roster-title h4 {
+  padding: 0px 6px;
+  border-top: 1px solid #4f5459;
+  border-left: 1px solid #4f5459;
+  font: 14px/29px Arial;
+  color: #c0c0c2;
+  text-transform: uppercase;
+  height: 29px;
+}
+
+#roster .roster-title b.toggle {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  display: block;
+  right: 0px;
+  top: 0px;
+  display: none;
+}
+
+#roster .roster-info {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: #1a1d1f;
+}
+
+#roster .roster-info .roster-teams {
+  position: absolute;
+  height: 30px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 5px;
+  border-bottom: 1px solid #000000;
+}
+
+#roster .roster-info .roster-teams .view-team{
+  background: #333;
+  position: relative;
+  overflow: hidden;
+}
+
+.roster-sel-wrap select {
+  position: relative;
+  width: 100%;
+  border-radius: 0;
+  background: #555;
+  border: 1px solid #191919;
+  color: #ccc;
+  font: 12px/18px Arial;
+  height: 18px;
+  padding: 0 0 0px 4px;
+  z-index: 1;
+  text-overflow: ellipsis;
+}
+
+#roster .roster-info .roster-list {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  overflow-y: auto;
+}
+
+#roster .roster-info ul li{
+  font: 14px/14px Arial;
+  color: #b4b4b4;
+  padding: 4px;
+  border-top: 1px solid #2d3033;
+  border-bottom: 1px solid #000000;
+  background: none;
+  font-weight: normal;
+  vertical-align: top;
+  height: auto;
+  text-shadow: 0px 0px 2px #000000;
 }

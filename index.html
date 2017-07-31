@@ -38,27 +38,133 @@
                 <span class="number-4">2</span>
               </div>
             </div>
+            Who is currently picking
           </div>
           <div id="ondeck">
+            Who is on deck to pick
           </div>
           <div id="selection">
             <div id="sel-name">
             </div>
             <div id="sel-team">
+              <img src="img/teams/mia.png" alt="team"/>
             </div>
             <div id="sel-stats">
             </div>
           </div>
         </div>
         <div id="bottom">
+          <div id="players">
+            <div class="hd">
+              <div class="buttons">
+                <button>ALL</button>
+                <button>QB</button>
+                <button>RB</button>
+                <button>WR</button>
+                <button>TE</button>
+                <button>K</button>
+                <button>DEF</button>
+              </div>
+              <div class="ps">
+                <b>
+                  <input type="text" name="" id="ps-text">
+                </b>
+              </div>
+            </div>
+            <div class="bd">
+              Player Name Here
+            </div>
+          </div>
         </div>
       </div>
 
       <div id="right">
-        <div id="watching">
+        <div id="right-wrapper">
+
+          <div id="watching">
+            <div class="content">
+              <div class="hd">
+                <h4>Watching Queue</h4>
+              </div>
+              <div class="bd">
+                <div class="bd-wrapper">
+                  <ul>
+                    <li class="empty">
+                      <span>Add Players Here to create a watching queue</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="recent">
+            <div class="content">
+              <div class="hd">
+                <h4>Recent Picks</h4>
+              </div>
+              <div class="bd">
+                <div class="bd-wrapper">
+                  <ul>
+                    <li>
+                      <span>
+                        D. Thomas
+                        <em>WR-DEN (Team 4)</em>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="roster">
+            <div class="content">
+              <div class="roster-title">
+                <h4>Team Rosters</h4>
+                <b class="toggle"></b>
+              </div>
+              <div class="roster-info">
+                <div class="roster-teams">
+                  <div class="roster-sel-wrap">
+                    <b></b>
+                    <select name="view-team">
+                      <option value="1" selected="selected">Team 1</option>
+                      <option value="2" selected="selected">Team 2</option>
+                      <option value="3" selected="selected">Team 3</option>
+                      <option value="4" selected="selected">Team 4</option>
+                      <option value="5" selected="selected">Team 5</option>
+                      <option value="6" selected="selected">Team 6</option>
+                      <option value="7" selected="selected">Team 7</option>
+                      <option value="8" selected="selected">Team 8</option>
+                      <option value="9" selected="selected">Team 9</option>
+                      <option value="10" selected="selected">Team 10</option>
+                      <option value="11" selected="selected">Team 11</option>
+                      <option value="12" selected="selected">Team 12</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="roster-list">
+                  <ul>
+                    <li><div id="pos">QB<span> Aaron Rodgers</span></div></li>
+                    <li><div id="pos">RB</div></li>
+                    <li><div id="pos">RB</div></li>
+                    <li><div id="pos">WR</div></li>
+                    <li><div id="pos">WR</div></li>
+                    <li><div id="pos">TE</div></li>
+                    <li><div id="pos">K</div></li>
+                    <li><div id="pos">DEF</div></li>
+                    <li><div id="pos">BN</div></li>
+                    <li><div id="pos">BN</div></li>
+                    <li><div id="pos">BN</div></li>
+                    <li><div id="pos">BN</div></li>
+                    <li><div id="pos">BN</div></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div id="recent"></div>
-        <div id="roster"></div>
       </div>
     </div>
   </div>
