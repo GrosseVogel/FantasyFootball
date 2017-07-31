@@ -50,7 +50,6 @@ img {
 }
 
 #layout {
-  background-color: #ff0000;
   top: 0;
   right: 0;
   bottom: 0;
@@ -61,7 +60,6 @@ img {
 }
 
 #header {
-  background-color: #00ff00;
   top: 0px;
   right: 10px;
   height: 55px;
@@ -95,6 +93,7 @@ img {
   position: absolute;
 }
 
+
 #bottom {
   background-color: #0000ff;
   top: 184px;
@@ -105,37 +104,95 @@ img {
   position: absolute;
 }
 
-#players .hd {
-  background-color: #29cc00;
+#players {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
   position: absolute;
+}
+
+#players .content {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  bottom: 0px;
+  z-index: 1;
+
+}
+
+#players .hd {
   top: 0px;
   left: 0px;
   right: 0px;
   height: 40px;
-
+  position: absolute;
+  padding: 0px 4px;
+  padding-left: 25px;
+  padding-top: 7px;
+  z-index: 100;
+  background-color: #e4e9f0;
+  background-repeat: repeat-x;
+  background-image: -webkit-linear-gradient(top, #ffffff, #e4e9f0);
 }
 
-#right {
+#players .content .hd button {
+  font-size: 14px;
+  line-height: 14px;
+  margin: 0;
+  display: inline-block;
+  padding: 4px 10px 4px;
+  text-transform: uppercase;
+  color: #657689;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  border: 1px solid #d0d1d2;
+  border-width: 1px 0 1px 1px;
+  border-bottom-color: #a7a9ac;
+  border-left-color: #bcbebf;
+  border-right-color: #bcbebf;
+  min-width: 15px;
+}
+
+#players .content .hd button.first {
+  border-radius: 3px 0 0 3px;
+  border-left-width: 1px;
+}
+#players .content .hd button.last {
+  border-radius: 0 3px 3px 0;
+  border-right-width: 1px;
+}
+
+#players .content .hd #ps {
+  top: 8px;
+  right: 10px;
+  width: 120px;
+  position: absolute;
+  background: #ffffff;
+  border-bottom: 1px solid #ffffff;
+  border-radius: 2px;
+  z-index: 5;
+}
+
+#players .content .hd #ps b{
+  top: 3px;
+  right: 4px;
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  background: url(/img/search-icon.png) no-repeat -8px -8px;
+}
+
+#players .content .hd #ps input {
   padding: 3px;
-  top: 55px;
-  right: -1px;
-  bottom: 0px;
-  width: 236px;
-  background: #2b2f33;
-  z-index: 302;
-  border: 1px solid #000000;
-  position: absolute;
-}
-
-
-
-#roster {
-  top: 325px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  position: absolute;
-  background-color: #606060;
+  padding-right: 20px;
+  width: 100%;
+  font: 14px/16px Arial;
+  text-transform: uppercase;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  color: #003d76;
+  background: transparent;
 }
 
 /* layout > top > Clock */
@@ -220,6 +277,18 @@ img {
   left: 120px;
   height: 100px;
   right:10px;
+  position: absolute;
+}
+
+#right {
+  padding: 3px;
+  top: 55px;
+  right: -1px;
+  bottom: 0px;
+  width: 236px;
+  background: #2b2f33;
+  z-index: 302;
+  border: 1px solid #000000;
   position: absolute;
 }
 
@@ -371,6 +440,15 @@ img {
   vertical-align: top;
   height: auto;
   text-shadow: 0px 0px 2px #000000;
+}
+
+#roster {
+  top: 325px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  background-color: #606060;
 }
 
 #roster .content {

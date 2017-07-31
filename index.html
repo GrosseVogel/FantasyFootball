@@ -55,24 +55,25 @@
         </div>
         <div id="bottom">
           <div id="players">
-            <div class="hd">
-              <div class="buttons">
-                <button>ALL</button>
-                <button>QB</button>
-                <button>RB</button>
-                <button>WR</button>
-                <button>TE</button>
-                <button>K</button>
-                <button>DEF</button>
+            <div class="content">
+              <div class="hd">
+                <div class="buttons">
+                  <button class="first" data-category>ALL</button>
+                  <button class="active" data-category="O">QB</button>
+                  <button class data-category="O">RB</button>
+                  <button class data-category="O">WR</button>
+                  <button class data-category="O">TE</button>
+                  <button class data-category="K">K</button>
+                  <button class="last" data-category="DEF">DEF</button>
+                </div>
+                <div id="ps">
+                  <b></b>
+                  <input type="text" id="ps-input" placeholder="Search" value autocomplete="off">
+                </div>
               </div>
-              <div class="ps">
-                <b>
-                  <input type="text" name="" id="ps-text">
-                </b>
+              <div class="bd">
+                Player Name Here
               </div>
-            </div>
-            <div class="bd">
-              Player Name Here
             </div>
           </div>
         </div>
