@@ -85,6 +85,28 @@ img {
   height: 100%;
 }
 
+.btn {
+  float: left;
+  padding: 4px 10px 4px;
+  font-size: 22px;
+  font-family: 'vfdsansmed';
+  text-transform: uppercase;
+  line-height: 22px;
+  height: 30px;
+  background: #f2f3f5;
+  color: #02428a;
+  border: 0;
+  position: relative;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  display: block;
+  width: auto;
+  margin: 0 10px 0 0;
+}
+
 #layout {
   top: 0;
   right: 0;
@@ -111,7 +133,6 @@ img {
 }
 
 #main {
-  background-color: #00f0f0;
   top: 55px;
   right: 237px;
   bottom: 0px;
@@ -121,13 +142,183 @@ img {
 }
 
 #top {
-  background-color: #f000f0;
   top: 0;
   right: 0px;
   height: 184px;
   left: 0px;
   position: absolute;
 }
+/* layout > top > Clock */
+#clock {
+  background-color: #2d2d2d;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 50%;
+  position: absolute;
+}
+
+#lcd-display .lcd-numbers {
+  font: 65px/65px 'DIGINormal';
+  position: absolute;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+#lcd-display .lcd-numbers span {
+  width: 15px;
+  display: inline-block;
+  text-align: center;
+}
+
+#lcd-display .lcd-set1 {
+  color: rgba(255, 255, 255, 0.05);
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.05);
+}
+
+#lcd-display .lcd-numbers .lcd-set2 {
+  text-align: center;
+  width: 15px;
+}
+
+#ondeck {
+  background-color: #ff5400;
+  top: 50%;
+  left: 0px;
+  width: 300px;
+  bottom: 0px;
+  position: absolute;
+}
+
+/* layout > main > top > selected player */
+#selection {
+  top: 0px;
+  left: 300px;
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+}
+
+#selection .content {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  border-bottom: 1px solid #000000;
+}
+
+#selection .content .hd {
+  top: 0px;
+  left: 0px;
+  height: 50px;
+  right: 0px;
+  position: absolute;
+}
+
+#selection .content .hd h4 {
+  padding-left: 10px;
+  color: #ffffff;
+  font-family: 'vfdsansmed';
+  font-size: 38px;
+  float: left;
+  white-space: nowrap;
+  line-height: 52px;
+  overflow: hidden;
+}
+
+#selection .content .hd h4 .name {
+  float: left;
+  display: block;
+}
+
+#selection .content .hd h4 .info {
+  float: left;
+  display: block;
+  font-size: 16px;
+  margin-left: 12px;
+  opacity: .75;
+  line-height: 72px;
+}
+
+#selection .content .bd {
+  top: 50px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  overflow: hidden;
+}
+
+#selection .content .bd .imgWrapper {
+  top: 15px;
+  left: 10px;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+}
+
+#sel-team img {
+  top: 50%;
+  width: 100px;
+  height: auto;
+}
+
+#selection .content .bd .stats {
+  top: 20px;
+  left: 120px;
+  height: 100px;
+  right: 10px;
+  position: absolute;
+  white-space: nowrap;
+}
+
+#selection .content .bd .stats .item {
+  float: left;
+  width: 13%;
+  height: 60px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+#selection .content .bd .stats .item .title {
+  display: block;
+  text-align: center;
+  border-left: 0;
+  color: #657688;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font: bold 10px arial;
+  padding: 4px 6px;
+  text-transform: uppercase;
+  border-radius: 5px 5px 0 0;
+  background-color: #cbcbcb;
+  background-repeat: repeat-x;
+  background-image: -webkit-linear-gradient(top, #f7fcfe, #cbcbcb);
+  filter: none;
+}
+
+#selection .content .bd .stats .item .value {
+  display: block;
+  text-align: center;
+  font: bold 16px/30px arial;
+  padding: 0 10px;
+  border-radius: 0 0 5px 5px;
+  background: #eeeeee;
+  color: #013369;
+}
+
+#selection .content .bd .buttons {
+  top: 80px;
+  left: 125px;
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  overflow: hidden;
+}
+
+
 
 /* Bottom*/
 #bottom {
@@ -335,92 +526,6 @@ img {
   height: 36px;
   position: absolute;
 }
-
-/* layout > top > Clock */
-#clock {
-  background-color: #2d2d2d;
-  top: 0px;
-  left: 0px;
-  width: 300px;
-  height: 50%;
-  position: absolute;
-}
-
-#lcd-display .lcd-numbers {
-  font: 65px/65px 'DIGINormal';
-  position: absolute;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.95);
-}
-
-#lcd-display .lcd-numbers span {
-  width: 15px;
-  display: inline-block;
-  text-align: center;
-}
-
-#lcd-display .lcd-set1 {
-  color: rgba(255, 255, 255, 0.05);
-  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.05);
-}
-
-#lcd-display .lcd-numbers .lcd-set2 {
-  text-align: center;
-  width: 15px;
-}
-
-#ondeck {
-  background-color: #ff5400;
-  top: 50%;
-  left: 0px;
-  width: 300px;
-  bottom: 0px;
-  position: absolute;
-}
-
-
-/* layout > main > top > selected player */
-#selection {
-  background-color: #ff006b;
-  top: 0px;
-  left: 300px;
-  right: 0px;
-  bottom: 0px;
-  position: absolute;
-}
-
-#sel-name {
-  background-color: #004509;
-  top: 10px;
-  left: 10px;
-  height: 50px;
-  right:10px;
-  position: absolute;
-}
-
-#sel-team {
-  background-color: #2e3032;
-  top: 70px;
-  left: 10px;
-  height: 100px;
-  width: 100px;
-  position: absolute;
-}
-
-#sel-team img {
-  top: 50%;
-  width: 100px;
-  height: auto;
-}
-#sel-stats {
-  background-color: #000000;
-  top: 70px;
-  left: 120px;
-  height: 100px;
-  right:10px;
-  position: absolute;
-}
-
 
 /* Right */
 #right {
